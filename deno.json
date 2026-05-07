@@ -1,0 +1,10 @@
+{
+  "tasks": {
+    "start": "deno run --allow-net --allow-env main.ts",
+    "deploy": "deployctl deploy --project=mbc-stream --token=$DENO_DEPLOY_TOKEN main.ts"
+  },
+  "compilerOptions": {
+    "lib": ["deno.window", "dom"],
+    "strict": true
+  }
+}
